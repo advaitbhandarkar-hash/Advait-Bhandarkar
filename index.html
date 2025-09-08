@@ -3,60 +3,89 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Advait Bhandarkar - Video Editor Portfolio</title>
+    <title>Advait Bhandarkar - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         header {
-            background-color: #222;
+            background-color: #1e1e2f;
             color: #fff;
-            padding: 20px;
             text-align: center;
+            padding: 30px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
         }
-        h1, h2 {
-            color: #222;
+        .signup-panel {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .signup-panel h2 {
+            margin-bottom: 15px;
+        }
+        .signup-panel a {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .signup-panel a:hover {
+            background-color: #45a049;
         }
         .projects {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            margin-bottom: 40px;
         }
         .project {
             background-color: #fff;
-            padding: 15px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h3 {
+            text-align: center;
+            padding: 10px;
+            background-color: #1e1e2f;
+            color: #fff;
+            margin: 0;
         }
         .project video, .project img {
             width: 100%;
-            height: auto;
-        }
-        .form-section {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
+            display: block;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #222;
+            background-color: #1e1e2f;
             color: #fff;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -68,45 +97,44 @@
     </header>
 
     <div class="container">
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Doing professional editing for the last 5 years using After Effects and Premiere Pro. I also create static graphics using Photoshop and Adobe Illustrator. I build cool stuff! Here are some of my projects.</p>
-        </section>
 
-        <section class="projects">
+        <!-- Signup Panel -->
+        <div class="signup-panel">
+            <h2>Sign Up for Updates</h2>
+            <p>Stay connected with my latest projects and offers.</p>
+            <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Sign Up Now</a>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects">
             <div class="project">
                 <h3>Video Project 1</h3>
                 <video controls>
-                    <source src="https://drive.google.com/file/d/1RBolfEcnxzGnU4XD6Ez4qyx5N_LShgch/view?usp=sharing" type="video/mp4">
+                    <source src="https://drive.google.com/uc?export=view&id=1RBolfEcnxzGnU4XD6Ez4qyx5N_LShgch" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
                 <h3>Video Project 2</h3>
                 <video controls>
-                    <source src="https://drive.google.com/file/d/1Aaq4thsccaxOAqA57Ql8jU0nkEdECAop/view?usp=sharing" type="video/mp4">
+                    <source src="https://drive.google.com/uc?export=view&id=1Aaq4thsccaxOAqA57Ql8jU0nkEdECAop" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
                 <h3>Image Project 1</h3>
-                <img src="https://drive.google.com/file/d/1F1V6PpVEGgrn90aP1elH-FKZ4u3w9_6_/view?usp=sharing" alt="Image Project 1">
+                <img src="https://drive.google.com/uc?export=view&id=1F1V6PpVEGgrn90aP1elH-FKZ4u3w9_6_" alt="Image Project 1">
             </div>
             <div class="project">
                 <h3>Image Project 2</h3>
-                <img src="https://drive.google.com/file/d/1ogVFY18eYZb2gXH5rEwJEsrJi_ePT4WB/view?usp=sharing" alt="Image Project 2">
+                <img src="https://drive.google.com/uc?export=view&id=1ogVFY18eYZb2gXH5rEwJEsrJi_ePT4WB" alt="Image Project 2">
             </div>
-        </section>
+        </div>
 
-        <section class="form-section">
-            <h2>Sign Up</h2>
-            <p>Fill out this form to get in touch or stay updated with my work.</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfz5Lc1NLFCDJEwoZ9/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Advait Bhandarkar. All rights reserved.</p>
+        &copy; 2025 Advait Bhandarkar. All rights reserved.
     </footer>
 
 </body>
