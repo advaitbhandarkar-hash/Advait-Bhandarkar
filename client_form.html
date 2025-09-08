@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio + Sign-up</title>
+  <style>
+    :root{--accent:#2563eb; --bg:#f7f7fb; --card:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; margin:0; background:var(--bg); color:#111}
+    header{background:linear-gradient(90deg, rgba(37,99,235,0.95), rgba(59,130,246,0.9)); color:white; padding:24px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    nav .brand{font-weight:700;font-size:20px}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:12px}
+    .hero{padding:48px 0;color:white}
+    .hero h1{margin:0 0 8px;font-size:32px}
+    .hero p{margin:0 0 16px;opacity:0.95}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+    .card{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .card h3{margin:10px 0 6px;font-size:16px}
+    .card p{margin:0;color:#444;font-size:14px}
+    .cta{display:inline-block;background:white;color:var(--accent);padding:8px 14px;border-radius:8px;font-weight:600;text-decoration:none}
+    footer{padding:28px 0;text-align:center;color:#666}
+
+    /* Responsive embed area for Google Form */
+    .form-wrap{margin-top:20px}
+    .form-embed{width:100%;height:650px;border:0;border-radius:10px;box-shadow:0 6px 30px rgba(2,6,23,0.08)}
+
+    /* small screens */
+    @media (max-width:600px){
+      .hero h1{font-size:24px}
+      .card img{height:140px}
+      .form-embed{height:700px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Advait Bhandarkar — Portfolio</div>
+        <div>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#signup" class="cta">Sign up</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>Hi — I'm Advait Bhandarkar</h1>
+        <p>I build cool stuff. Here are some of my projects. Sign up to contact me or get updates.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="work">
+      <h2 style="margin-top:18px">Selected Work</h2>
+      <div class="grid" style="margin-top:12px">
+        <article class="card">
+          <img src="https://picsum.photos/seed/p1/800/600" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>Short description of project 1 — what you did and tech used.</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/p2/800/600" alt="Project 2">
+          <h3>Project Title 2</h3>
+          <p>Short description of project 2 — show a result or outcome.</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/p3/800/600" alt="Project 3">
+          <h3>Project Title 3</h3>
+          <p>Short description of project 3 — client, scope or impact.</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/p4/800/600" alt="Project 4">
+          <h3>Project Title 4</h3>
+          <p>Short description — include link or case study if available.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <h2>About</h2>
+      <div class="card" style="margin-top:12px;padding:16px">
+        <p>Hello — I'm a creative professional who focuses on video editing, web design, or whatever you do. Replace this text with your bio, skills, and a link to download your CV.</p>
+      </div>
+    </section>
+
+    <section id="signup" style="margin-top:28px">
+      <h2>Sign up / Contact</h2>
+      <p>Use the embedded form below to collect user data. Responses will go to the Google Sheet linked to your Form.</p>
+
+      <div class="form-wrap">
+        <!-- Replace the src below with your Google Form's embed URL. Example:
+             https://docs.google.com/forms/d/e/1FAIpQLSf.../viewform?embedded=true
+        -->
+        <iframe class="form-embed" src="https://forms.gle/wz5Lc1NLFCDJEwoZ9" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <p style="margin-top:10px;font-size:13px;color:#555">Not using Google Forms? You can replace the iframe with any third-party embed (Typeform, Jotform, etc.) or wire this page to a backend that writes to Google Sheets via the Sheets API.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Made with ❤ — replace with your real contact details. Hosted on GitHub Pages or Netlify.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
