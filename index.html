@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Advait Bhandarkar Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio + Sign-up</title>
+  <style>
+    :root{--accent:#2563eb; --bg:#f7f7fb; --card:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; margin:0; background:var(--bg); color:#111}
+    header{background:linear-gradient(90deg, rgba(37,99,235,0.95), rgba(59,130,246,0.9)); color:white; padding:24px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    nav .brand{font-weight:700;font-size:20px}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:12px}
+    .hero{padding:48px 0;color:white}
+    .hero h1{margin:0 0 8px;font-size:32px}
+    .hero p{margin:0 0 16px;opacity:0.95}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+    .card{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .card h3{margin:10px 0 6px;font-size:16px}
+    .card p{margin:0;color:#444;font-size:14px}
+    .cta{display:inline-block;background:white;color:var(--accent);padding:8px 14px;border-radius:8px;font-weight:600;text-decoration:none}
+    footer{padding:28px 0;text-align:center;color:#666}
+
+    /* Responsive embed area for Google Form */
+    .form-wrap{margin-top:20px}
+    .form-embed{width:100%;height:650px;border:0;border-radius:10px;box-shadow:0 6px 30px rgba(2,6,23,0.08)}
+
+    /* small screens */
+    @media (max-width:600px){
+      .hero h1{font-size:24px}
+      .card img{height:140px}
+      .form-embed{height:700px}
+    }
+  </style>
 </head>
 <body>
     <header>
-        <h1>Advait Bhandarkar</h1>
-        <p>Certified Video Editor from FTII</p>
-    </header>
+    <div class="container">
+      <nav>
+        <div class="brand">Advait Bhandarkar — Portfolio</div>
+        <div>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#signup" class="cta">Sign up</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>Hi — I'm Your Name</h1>
+        <p>I build cool stuff. Here are some of my projects. Sign up to contact me or get updates.</p>
+      </div>
+    </div>
+  </header>
+     <section id="about" style="margin-top:28px">
+      <h2>About</h2>
+      <div class="card" style="margin-top:12px;padding:16px">
+        <p>Hello — I'm a creative professional who focuses on video editing, Graphic designing , Narration stories(Short films ,film editing), motion grafics. Doing editing from last 5 years, softwares After Effects - PremierePRO - Photoshop - Adobe Illustration, Done- motion grafics , logo animation,Map animation , character animation , Narration style editing , commercial edits, AMVs, Poster designing,logo design.</p>
+      </div>
+    </section>
 
     <section class="signup">
         <h2>Join My Community</h2>
@@ -21,22 +69,29 @@
         <h2>My Work</h2>
         <div class="projects">
             <div class="project">
+                 <h3>Narration Style editing</h3>
+          <p>Short description of project 1 — Narration style editing or film editing is the process of organizing and combining video clips, sound, and visuals to tell a story in a clear and engaging way. It focuses on the flow of the narrative, ensuring that scenes transition smoothly, emotions are effectively conveyed, and the audience stays connected to the storyline. Good editing enhances the message, pace, and overall impact of the film or video.</p>
                     <a href="https://drive.google.com/file/d/1Aaq4thsccaxOAqA57Ql8jU0nkEdECAop/view?usp=drive_link" target="_blank">
     <img src="https://drive.google.com/uc?export=download&id=153WVlqcIktzLyM3EmTmslKkL4My9RH76" alt="Video Preview" width="320">
 </a>
             </div>
             <div class="project">
+                 <h3>Motion Graphics</h3>
+                 <p>Motion graphics is a form of animation that combines graphic design, text, and visual effects to create moving visuals. It’s often used in videos, advertisements, presentations, and websites to explain ideas, tell stories, or make information more engaging and visually appealing. Motion graphics bring static designs to life through movement, timing, and creative transitions.</p>
                    <a href="https://drive.google.com/file/d/1RBolfEcnxzGnU4XD6Ez4qyx5N_LShgch/view?usp=drive_link" target="_blank">
     <img src="https://drive.google.com/uc?export=download&id=1oqt_ht1YhRsxn2PbTgKg_EagdKt1ml4J" alt="Video Preview" width="320">
 </a>
           </div>
             <div class="project">
+                  <h3>Graphic Designing</h3>
+                <p>Graphic Design is the art of creating visual content to communicate messages. It involves combining images, colors, fonts, and layouts to make designs for websites, advertisements, logos, packaging, and more. Good graphic design helps attract attention, express ideas, and make information easier to understand. It’s used in media, marketing, and branding to create appealing and effective visuals.</p>
                <a href="https://drive.google.com/file/d/1F1V6PpVEGgrn90aP1elH-FKZ4u3w9_6_/view?usp=drive_link" target="_blank">
     <img src="https://drive.google.com/uc?export=download&id=1F1V6PpVEGgrn90aP1elH-FKZ4u3w9_6_" alt="Project Image 1" width="300">
 </a>
 
             </div>
             <div class="project">
+                 <h3>Client Work</h3>
                 <a href="https://drive.google.com/file/d/1ogVFY18eYZb2gXH5rEwJEsrJi_ePT4WB/view?usp=drive_link" target="_blank">
     <img src="https://drive.google.com/uc?export=download&id=1ogVFY18eYZb2gXH5rEwJEsrJi_ePT4WB" alt="Project Image 2 " width="300">
 </a>
@@ -46,6 +101,7 @@
     </section>
 </body>
 </html>
+
 
 
 
