@@ -3,139 +3,42 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Advait Bhandarkar - Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #1e1e2f;
-            color: #fff;
-            text-align: center;
-            padding: 30px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.1em;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .signup-panel {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
-        }
-        .signup-panel h2 {
-            margin-bottom: 15px;
-        }
-        .signup-panel a {
-            text-decoration: none;
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .signup-panel a:hover {
-            background-color: #45a049;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .project {
-            background-color: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .project:hover {
-            transform: translateY(-5px);
-        }
-        .project h3 {
-            text-align: center;
-            padding: 10px;
-            background-color: #1e1e2f;
-            color: #fff;
-            margin: 0;
-        }
-        .project video, .project img {
-            width: 100%;
-            display: block;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e2f;
-            color: #fff;
-            margin-top: 40px;
-        }
-    </style>
+    <title>Advait Bhandarkar Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <header>
         <h1>Advait Bhandarkar</h1>
-        <p>Professional Video Editor & Graphic Designer</p>
+        <p>Certified Video Editor from FTII</p>
     </header>
 
-    <div class="container">
+    <section class="signup">
+        <h2>Join My Community</h2>
+        <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank">Sign Up Here</a>
+    </section>
 
-        <!-- Signup Panel -->
-        <div class="signup-panel">
-            <h2>Sign Up for Updates</h2>
-            <p>Stay connected with my latest projects and offers.</p>
-            <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Sign Up Now</a>
-        </div>
-
-        <!-- Projects Section -->
+    <section class="work">
+        <h2>My Work</h2>
         <div class="projects">
             <div class="project">
-                <h3>Video Project 1</h3>
                 <video controls>
-                    <source src="https://drive.google.com/uc?export=view&id=1RBolfEcnxzGnU4XD6Ez4qyx5N_LShgch" type="video/mp4">
+                    <source src="https://drive.google.com/uc?export=download&id=YOUR_VIDEO1_ID" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
-                <h3>Video Project 2</h3>
                 <video controls>
-                    <source src="https://drive.google.com/uc?export=view&id=1Aaq4thsccaxOAqA57Ql8jU0nkEdECAop" type="video/mp4">
+                    <source src="https://drive.google.com/uc?export=download&id=YOUR_VIDEO2_ID" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
-                <h3>Image Project 1</h3>
-                <img src="https://drive.google.com/uc?export=view&id=1F1V6PpVEGgrn90aP1elH-FKZ4u3w9_6_" alt="Image Project 1">
+                <img src="https://drive.google.com/uc?export=download&id=YOUR_IMAGE1_ID" alt="Project Image 1" />
             </div>
             <div class="project">
-                <h3>Image Project 2</h3>
-                <img src="https://drive.google.com/uc?export=view&id=1ogVFY18eYZb2gXH5rEwJEsrJi_ePT4WB" alt="Image Project 2">
+                <img src="https://drive.google.com/uc?export=download&id=YOUR_IMAGE2_ID" alt="Project Image 2" />
             </div>
         </div>
-
-    </div>
-
-    <footer>
-        &copy; 2025 Advait Bhandarkar. All rights reserved.
-    </footer>
-
+    </section>
 </body>
 </html>
